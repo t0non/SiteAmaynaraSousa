@@ -1,0 +1,13 @@
+/* Seção "Por quem cuidar da sua saúde" — layout da referência (coluna central, destaques), paleta da Amaynara */
+.pw-sec{background:#FFFFFF;padding:72px 20px;font-family:"Inter","Montserrat",sans-serif;text-align:center}
+.pw-inner{max-width:500px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:18px}
+.pw-title{margin:0 0 6px;font:700 48px/1.15 "Inter","Montserrat",sans-serif;letter-spacing:-.05em;color:#1F282E}
+.pw-title span{background:var(--am-700,#7A5527);color:#FFFFFF;padding:0 .08em}
+.pw-sec p{margin:0;font:400 20px/1.35 "Inter","Montserrat",sans-serif;letter-spacing:-.03em;color:#1F282E}
+.pw-list{line-height:1.2!important}
+.pw-sub{margin:10px 0 0;font:500 26px/1.25 "Inter","Montserrat",sans-serif;letter-spacing:-.04em;color:#1F282E;max-width:560px}
+.pw-hl span{background:var(--am-700,#7A5527);color:#FFFFFF;padding:2px 6px;box-decoration-break:clone;-webkit-box-decoration-break:clone;line-height:1.5}
+.pw-strong{font-weight:700!important}
+.pw-cta{margin-top:14px;display:inline-block;padding:15px 34px;border-radius:6px;background-image:var(--am-grad-btn,linear-gradient(135deg,#8F622B,#5E4120));color:#FCF8F2!important;font:600 16px/1 "Inter",sans-serif;text-decoration:none;box-shadow:0 8px 20px -10px rgba(46,34,22,.6);transition:transform .25s,box-shadow .25s}
+.pw-cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px -10px rgba(46,34,22,.65)}
+@media(max-width:767px){.pw-sec{padding:52px 18px}.pw-title{font-size:36px}.pw-sec p{font-size:18px}.pw-sub{font-size:22px}}

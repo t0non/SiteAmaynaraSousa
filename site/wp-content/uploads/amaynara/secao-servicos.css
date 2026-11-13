@@ -1,0 +1,30 @@
+/* Cards "Serviços oferecidos" — layout do site de referência na paleta da Amaynara */
+.sv-sec{background:#FFFFFF;padding:64px 20px;font-family:"Inter","Montserrat",sans-serif}
+.sv-inner{max-width:1000px;margin:0 auto}
+.sv-title{margin:0 0 28px;text-align:center;font:600 36px/1.2 "Inter","Montserrat",sans-serif;letter-spacing:-.04em;color:#1F282E}
+.sv-title span{background:var(--am-700,#7A5527);color:#FFFFFF;padding:0 .12em}
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sv-card{border-radius:8px;padding:28px 28px 30px;display:flex;flex-direction:column;gap:26px}
+.sv-dark{background-image:linear-gradient(140deg,#6B4A24 0%,#3A2A19 100%);background-color:#4A341C;color:#FFFFFF}
+.sv-light{background:#F2F0EB;color:#1F282E}
+.sv-top{display:flex;align-items:center;justify-content:space-between}
+.sv-badge{display:inline-block;padding:5px 11px;border-radius:4px;background:var(--am-600,#9C6E32);color:#FFFFFF;font:600 13px/1.2 "Inter",sans-serif}
+.sv-top svg{width:36px;height:36px;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.sv-dark .sv-top svg{stroke:#FFFFFF}
+.sv-light .sv-top svg{stroke:#1F282E}
+.sv-body{border-left:3px solid var(--am-500,#BD8941);padding-left:14px;display:flex;flex-direction:column;gap:22px;flex:1}
+.sv-body h3{margin:0;font:500 23px/1.3 "Inter","Montserrat",sans-serif;letter-spacing:-.02em;color:inherit;min-height:2.6em}
+.sv-body p{margin:0;font:400 15.5px/1.7 "Inter","Montserrat",sans-serif;color:inherit}
+.sv-dark .sv-body p{color:#F1ECE4}
+.sv-light .sv-body p{color:#3A3F43}
+@media(max-width:1024px){.sv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:767px){.sv-sec{padding:44px 16px}.sv-title{font-size:28px}.sv-grid{grid-template-columns:1fr}.sv-body h3{min-height:0;font-size:21px}}
+/* link para a página de cada serviço (o card inteiro fica clicável) */
+.sv-card{position:relative;transition:transform .25s,box-shadow .25s}
+.sv-card:hover{transform:translateY(-3px);box-shadow:0 18px 34px -22px rgba(46,34,22,.6)}
+.sv-more{margin-top:auto;font:600 14px/1 "Inter",sans-serif;text-decoration:none;color:inherit;display:inline-flex;gap:6px;align-items:center}
+.sv-dark .sv-more{color:#E1C391}
+.sv-light .sv-more{color:var(--am-700,#7A5527)}
+.sv-more::after{content:"";position:absolute;inset:0;border-radius:8px}
+.sv-card:hover .sv-more span{transform:translateX(3px)}
+.sv-more span{transition:transform .2s}

@@ -1,0 +1,43 @@
+/* Seção "Diferenciais do Atendimento" — estrutura baseada na 2ª seção de dradenisevillani.com.br,
+   adaptada à paleta e à tipografia do site da Dra. Amaynara. Ajuste as cores aqui. */
+.dv-sec{
+  --dv-bg:#FCF8F2; --dv-box:#F6EEE2; --dv-ink:#573C1D; --dv-card:#7A5527; --dv-card-ink:#FCF8F2;
+  --dv-card-muted:#EEDDC4; --dv-accent:#9C6E32; --dv-font:"Montserrat",sans-serif;
+}
+.dv-sec .elementor-element.elementor-element-32e621b{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--padding-top:60px;--padding-bottom:60px;--padding-left:20px;--padding-right:20px;background-color:var(--dv-bg)}
+.dv-sec .elementor-element.elementor-element-234d74a{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px}
+.dv-sec .dv-title{--align-self:center;text-align:center}
+.dv-sec .dv-title .elementor-heading-title{font-family:var(--dv-font);font-size:36px;font-weight:600;line-height:1.15em;letter-spacing:-0.03em;color:var(--dv-ink);margin:0}
+.dv-sec .dv-title .elementor-heading-title span{color:var(--dv-card-ink);background:var(--dv-card);padding:0 .12em}
+.dv-sec .local-specialty{font:500 20px/1.4 var(--dv-font);color:var(--dv-accent);margin:16px 0 0}
+.dv-sec .elementor-element.elementor-element-dc8c00b{--align-self:center;width:80%;max-width:80%;background-color:var(--dv-box);margin:24px 0 0;padding:20px;text-align:center;font-family:var(--dv-font);font-size:20px;font-weight:400;line-height:1.35em;letter-spacing:-0.02em;color:var(--dv-ink)}
+.dv-sec .elementor-element.elementor-element-dc8c00b p{margin-bottom:0}
+.dv-sec .elementor-element.elementor-element-b9f9298{margin:40px 0 0}
+.dv-sec .dv-row{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--margin-top:20px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px}
+.dv-sec .dv-card{--display:flex;--gap:10px 10px;--row-gap:10px;--column-gap:10px;--border-radius:8px;--padding-top:30px;--padding-bottom:30px;--padding-left:30px;--padding-right:30px;background-color:var(--dv-card);border-radius:8px}
+.dv-sec .dv-card .elementor-widget-icon{--align-self:center;margin:0 0 -5px}
+.dv-sec .dv-card .elementor-icon-wrapper{text-align:center}
+.dv-sec .dv-card .elementor-icon{font-size:32px;color:var(--dv-card-ink)}
+.dv-sec .dv-card .elementor-icon svg{height:32px;width:auto;fill:var(--dv-card-ink)}
+.dv-sec .dv-card .dv-card-title,.dv-sec .dv-card .dv-card-text{--align-self:center;text-align:center;font-family:var(--dv-font);font-weight:400;line-height:1.25em;letter-spacing:-0.02em}
+.dv-sec .dv-card .dv-card-title{font-size:20px;color:var(--dv-card-ink)}
+.dv-sec .dv-card .dv-card-text{font-size:16px;color:var(--dv-card-muted)}
+.dv-sec .dv-card p{margin-bottom:0}
+@media (min-width:768px){.dv-sec .elementor-element.elementor-element-32e621b{--content-width:1000px}.dv-sec .elementor-element.elementor-element-234d74a{--width:100%}}
+@media (max-width:767px){
+  .dv-sec .elementor-element.elementor-element-32e621b{--padding-top:40px;--padding-bottom:60px}
+  .dv-sec .dv-title .elementor-heading-title{font-size:28px}
+  .dv-sec .elementor-element.elementor-element-dc8c00b{width:100%;max-width:100%;font-size:16px}
+  .dv-sec .dv-card .elementor-widget-icon,.dv-sec .dv-card .dv-card-title,.dv-sec .dv-card .dv-card-text{--align-self:flex-start;text-align:left}
+  .dv-sec .dv-card .elementor-icon-wrapper{text-align:left}
+}
+/* animação de entrada (o script em index.html adiciona .is-in) */
+.dv-sec .motion-reveal{opacity:0;translate:0 16px;transition:opacity .65s,translate .65s cubic-bezier(.2,.65,.3,1)}
+.dv-sec .motion-card.motion-reveal{translate:0 42px;transition:opacity .75s ease var(--card-delay,0ms),translate .75s cubic-bezier(.16,1,.3,1) var(--card-delay,0ms)}
+.dv-sec .motion-reveal.is-in{opacity:1;translate:none}
+@media (prefers-reduced-motion:reduce){.dv-sec .motion-reveal,.dv-sec .motion-card.motion-reveal{opacity:1;translate:none;transition:none}}
+/* garante os tamanhos contra regras globais de <p> do tema */
+.dv-sec .dv-card .dv-card-title p,.dv-sec .dv-card .dv-card-title b{font-size:20px;font-weight:600;line-height:1.25em;color:var(--dv-card-ink);font-family:var(--dv-font)}
+.dv-sec .dv-card .dv-card-text p{font-size:16px;line-height:1.35em;color:var(--dv-card-muted);font-family:var(--dv-font)}
+.dv-sec .elementor-element.elementor-element-dc8c00b p{font-size:20px;line-height:1.4em;color:var(--dv-ink);font-family:var(--dv-font)}
+@media (max-width:767px){.dv-sec .elementor-element.elementor-element-dc8c00b p{font-size:16px}}

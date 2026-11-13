@@ -1,0 +1,28 @@
+/* Seção dos 2 consultórios — sem fotos */
+.cn-sec{background:#FFFFFF;padding:72px 20px;font-family:"Inter","Montserrat",sans-serif;color:#1F282E}
+.cn-inner{max-width:1040px;margin:0 auto}
+.cn-title{margin:0 0 10px;text-align:center;font:700 36px/1.2 "Inter","Montserrat",sans-serif;letter-spacing:-.04em;color:#1F282E}
+.cn-title span{background:var(--am-700,#7A5527);color:#fff;padding:0 .12em}
+.cn-sub{margin:0 auto 32px;max-width:620px;text-align:center;font-size:17px;line-height:1.55;color:#4A4F53}
+.cn-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cn-card{display:flex;flex-direction:column;gap:12px;background:#F7F5F1;border:1px solid #ECE6DC;border-radius:14px;padding:26px}
+.cn-badge{align-self:flex-start;padding:5px 11px;border-radius:4px;background:var(--am-600,#9C6E32);color:#fff;font:600 12px/1.2 "Inter",sans-serif;letter-spacing:.02em}
+.cn-card h3{margin:2px 0 0;font:600 22px/1.25 "Inter",sans-serif;letter-spacing:-.03em;color:#1F282E}
+.cn-addr{margin:0;font-size:16px;line-height:1.55;color:#3A3F43}
+.cn-card iframe{width:100%;height:230px;border:0;border-radius:10px;background:#EDE6DB}
+.cn-link{align-self:flex-start;font:600 15px/1 "Inter",sans-serif;color:var(--am-700,#7A5527)!important;text-decoration:none;padding:8px 0}
+.cn-link:hover{color:var(--am-900,#2E2216)!important}
+.cn-hours{margin:26px auto 0;max-width:720px;text-align:center;font-size:15px;line-height:1.6;color:#4A4F53}
+.cn-hours a{color:var(--am-700,#7A5527);font-weight:600}
+@media(max-width:767px){.cn-sec{padding:52px 16px}.cn-title{font-size:28px}.cn-grid{grid-template-columns:1fr}.cn-card{padding:20px}.cn-card iframe{height:200px}}
+
+/* "Como chegar" como botão de CTA */
+.cn-link{display:inline-flex!important;align-items:center;gap:10px;margin-top:6px;padding:14px 22px!important;border-radius:8px;background-image:linear-gradient(135deg,#14100C 0%,#2E2216 55%,#4A3520 100%);border:1px solid rgba(212,166,90,.55);color:#F3D9A6!important;font:700 13px/1 "Montserrat",sans-serif!important;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 10px 22px -12px rgba(20,16,12,.8);transition:transform .2s,filter .2s}
+.cn-link::before{content:"";width:16px;height:16px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E") center/contain no-repeat}
+.cn-link:hover{transform:translateY(-2px);filter:brightness(1.15);color:#fff!important}
+@media(max-width:767px){.cn-link{align-self:stretch!important;justify-content:center}}
+.cn-more{margin:10px 0 0;text-align:center}
+.cn-more a{font:700 14px/1.4 "Montserrat",sans-serif;color:var(--am-700,#7A5527)!important;text-decoration:underline;text-underline-offset:3px}
+/* "Como chegar": dourado, sem seta (mesmo botão do blog) */
+.cn-link{background-image:linear-gradient(135deg,#D4A65A 0%,#BD8941 45%,#8F622B 100%)!important;color:#fff!important;border:0!important;box-shadow:0 10px 22px -12px rgba(143,98,43,.8)!important}
+.cn-link:hover{background-image:linear-gradient(135deg,#BD8941 0%,#8F622B 55%,#5E4120 100%)!important;color:#fff!important;filter:none!important}

@@ -1,0 +1,57 @@
+/* Nota do Google no hero */
+.am-hero-rating{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(225,195,145,.45);color:#FCF8F2!important;text-decoration:none;font:500 13px/1 "Inter",sans-serif;backdrop-filter:blur(3px);transition:background .2s}
+.am-hero-rating:hover{background:rgba(255,255,255,.2)}
+.am-hero-rating svg{width:16px;height:16px}
+.am-hero-rating .am-stars{color:#F2C14E;letter-spacing:1px;font-size:13px}
+.am-hero-rating b{font-weight:700}
+@media(max-width:767px){.am-hero-rating{background:rgba(255,255,255,.75);border-color:#CFA463;color:#2E2216!important}}
+
+/* FAQ da home */
+.fq-sec{background:#F7F5F1;padding:72px 20px;font-family:"Inter","Montserrat",sans-serif;color:#1F282E}
+.fq-inner{max-width:820px;margin:0 auto}
+.fq-title{margin:0 0 8px;text-align:center;font:700 36px/1.2 "Inter",sans-serif;letter-spacing:-.04em}
+.fq-title span{background:var(--am-700,#7A5527);color:#fff;padding:0 .12em}
+.fq-sub{margin:0 0 28px;text-align:center;color:#4A4F53;font-size:16px}
+.fq-list details{background:#fff;border:1px solid #ECE6DC;border-radius:10px;padding:0 20px;margin-bottom:10px;transition:border-color .2s}
+.fq-list details[open]{border-color:#D9C4A2}
+.fq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font:600 17px/1.4 "Inter",sans-serif}
+.fq-list summary::-webkit-details-marker{display:none}
+.fq-list summary::after{content:"+";flex:none;font:400 24px/1 "Inter",sans-serif;color:var(--am-600,#9C6E32);transition:transform .2s}
+.fq-list details[open] summary::after{transform:rotate(45deg)}
+.fq-list details p{margin:0 0 18px;color:#3A3F43;font-size:16px;line-height:1.6}
+@media(max-width:767px){.fq-sec{padding:52px 16px}.fq-title{font-size:28px}.fq-list summary{font-size:16px}}
+
+/* Telefone na seção dos consultórios */
+.cn-hours a[href^="tel:"]{white-space:nowrap}
+
+/* Barra fixa de agendamento (celular): removida a pedido; no celular fica o botão flutuante do WhatsApp */
+.am-sticky{display:none!important}
+.am-hero-rating{align-self:flex-start;width:fit-content;max-width:100%}
+
+/* Selo de avaliação no hero (formato card) */
+.am-rating-card{display:inline-flex!important;align-items:center;gap:16px;margin-top:18px;padding:12px 20px 12px 16px!important;border-radius:16px!important;background:#FFFFFF!important;border:1px solid #EFE6D8!important;box-shadow:0 14px 30px -16px rgba(0,0,0,.45);backdrop-filter:none!important;color:#1F1A14!important;width:fit-content;max-width:100%}
+.am-rating-card:hover{transform:translateY(-1px);box-shadow:0 18px 34px -16px rgba(0,0,0,.5)}
+.am-rating-card .rc-left{display:flex;flex-direction:column;align-items:center;gap:5px;flex:none}
+.am-rating-card .rc-left svg{width:34px;height:34px}
+.am-rating-card .rc-stars{color:#F4B400;font-size:13px;letter-spacing:2px;line-height:1}
+.am-rating-card .rc-right{display:flex;flex-direction:column;gap:4px}
+.am-rating-card .rc-right b{font:700 16px/1.2 "Inter",sans-serif;color:#1F1A14}
+.am-rating-card .rc-right span{font:500 13px/1.35 "Inter",sans-serif;color:#7A6550}
+@media(max-width:767px){.am-rating-card{padding:10px 16px 10px 12px!important;gap:12px}.am-rating-card .rc-right b{font-size:15px}}
+
+/* CTAs pulsando de leve (anel suave que se expande), todas as páginas */
+@keyframes am-pulse{0%{box-shadow:0 8px 20px -10px rgba(46,34,22,.55),0 0 0 0 rgba(189,137,65,.42)}70%{box-shadow:0 8px 20px -10px rgba(46,34,22,.55),0 0 0 11px rgba(189,137,65,0)}100%{box-shadow:0 8px 20px -10px rgba(46,34,22,.55),0 0 0 0 rgba(189,137,65,0)}}
+@keyframes am-pulse-wa{0%{box-shadow:0 0 0 0 rgba(31,175,85,.45)}70%{box-shadow:0 0 0 10px rgba(31,175,85,0)}100%{box-shadow:0 0 0 0 rgba(31,175,85,0)}}
+.elementor-widget-button .elementor-button,.pw-cta,.sp-btn,.sv-more{animation:am-pulse 2.8s ease-out infinite}
+.am-sticky-wa{animation:am-pulse-wa 2.8s ease-out infinite}
+.elementor-widget-button .elementor-button:hover,.pw-cta:hover,.sp-btn:hover{animation-play-state:paused}
+.sv-more{animation:none}
+@media (prefers-reduced-motion:reduce){.elementor-widget-button .elementor-button,.pw-cta,.sp-btn,.am-sticky-wa{animation:none!important}}
+
+/* Botão flutuante do WhatsApp menor */
+.elementor-element.elementor-element-f726a6a{transform:scale(.72);transform-origin:100% 100%}
+
+/* FAQ com fundo branco */
+.fq-sec{background:#fff!important}
+.fq-list details{background:#FBF9F6}
+.fq-list details[open]{background:#fff;box-shadow:0 12px 26px -20px rgba(46,34,22,.45)}

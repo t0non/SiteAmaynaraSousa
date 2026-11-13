@@ -1,0 +1,28 @@
+/* Seção "Por que você deve ser acompanhado" — layout do site de referência, cores do título na paleta da Amaynara */
+.pq-sec{background:#F4F1EC;padding:64px 20px;font-family:"Inter","Montserrat",sans-serif}
+.pq-inner{max-width:1110px;margin:0 auto}
+.pq-title{margin:0 0 36px;text-align:center;font:600 36px/1.2 "Inter","Montserrat",sans-serif;letter-spacing:-.04em;color:#1F282E}
+.pq-title span{display:block}
+.pq-l2{display:inline-block!important;margin-top:6px;padding:0 .14em;background:var(--am-700,#7A5527);color:#FFFFFF;font-size:30px}
+.pq-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.pq-col{padding:30px 30px 26px}
+.pq-benefit{background:#F1F7F2;border-radius:10px}
+.pq-head{display:flex;align-items:center;gap:22px;margin:0 0 22px}
+.pq-head h3{margin:0;font:600 24px/1.3 "Inter","Montserrat",sans-serif;letter-spacing:-.04em}
+.pq-risk .pq-head h3{color:#1F282E}
+.pq-benefit .pq-head h3{color:#1E6B4A}
+.pq-x,.pq-check{flex:none;width:38px;height:38px;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.pq-x{stroke:#8E1B1B;stroke-width:3.4;width:30px;height:30px;margin:0 4px}
+.pq-check{stroke:#1E6B4A;stroke-width:2.8}
+.pq-col ul{list-style:none;margin:0;padding:0}
+.pq-col li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed #D9D4CA}
+.pq-benefit li{border-bottom-color:#D3E4D8}
+.pq-col li:last-child{border-bottom:0}
+.pq-col li svg{flex:none;width:17px;height:17px;margin-top:8px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pq-risk li svg{stroke:#8E1B1B}
+.pq-benefit li svg{stroke:#1E6B4A}
+.pq-col li p{margin:0;font:400 16px/1.5 "Inter","Montserrat",sans-serif;color:#555B60}
+.pq-col li b{font-weight:600;color:#2B3237}
+@media(max-width:900px){.pq-cols{grid-template-columns:1fr}.pq-title{font-size:28px}.pq-l2{font-size:22px}}
+@media(max-width:767px){.pq-sec{padding:44px 16px}.pq-col{padding:22px 18px}.pq-head{gap:14px}.pq-head h3{font-size:20px}.pq-x{width:24px;height:24px}.pq-check{width:30px;height:30px}.pq-col li p{font-size:15px}}
+.pq-title,.pq-head h3{font-weight:700}

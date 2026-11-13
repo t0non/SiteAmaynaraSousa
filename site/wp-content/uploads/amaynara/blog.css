@@ -1,0 +1,145 @@
+/* Blog da Dra. Amaynara Sousa */
+.bl-hero{background-image:linear-gradient(140deg,#6B4A24 0%,#3A2A19 100%);color:#FCF8F2;padding:150px 20px 56px;font-family:"Inter","Montserrat",sans-serif}
+.bl-inner{max-width:860px;margin:0 auto}
+.bl-bc{font-size:13px;color:#E1C391;margin-bottom:18px}
+.bl-bc a{color:#E1C391;text-decoration:none}
+.bl-bc span{margin:0 6px;opacity:.7}
+.bl-kicker{display:inline-block;padding:5px 11px;border-radius:4px;background:rgba(225,195,145,.18);border:1px solid rgba(225,195,145,.5);color:#F3E2C2;font:600 12px/1.2 "Inter",sans-serif;letter-spacing:.03em;margin-bottom:14px}
+.bl-hero h1{margin:0 0 14px;font:700 42px/1.15 "Inter",sans-serif;letter-spacing:-.035em;color:#fff}
+.bl-hero p{margin:0;color:#EADFCF;font-size:17px;line-height:1.6}
+.bl-meta{margin-top:14px!important;font-size:14px!important;color:#D9C7AE!important}
+.bl-body{max-width:760px;margin:0 auto;padding:48px 20px 24px;font:400 18px/1.75 "Inter","Montserrat",sans-serif;color:#1F282E}
+.bl-lead{font-size:20px;line-height:1.65;color:#3A3F43;border-left:3px solid var(--am-500,#BD8941);padding-left:18px;margin:0 0 30px}
+.bl-body h2{margin:36px 0 12px;font:700 27px/1.25 "Inter",sans-serif;letter-spacing:-.03em;color:#1F282E}
+.bl-body p{margin:0 0 16px}
+.bl-body ul{margin:0 0 18px;padding:0;list-style:none}
+.bl-body li{position:relative;padding-left:28px;margin:0 0 9px}
+.bl-body li::before{content:"";position:absolute;left:0;top:.62em;width:14px;height:14px;border-radius:50%;background:var(--am-600,#9C6E32) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center/10px no-repeat}
+.bl-box{margin:34px 0;padding:24px;border-radius:14px;background:#F7F5F1;border:1px solid #ECE6DC}
+.bl-box h3{margin:0 0 8px;font:700 20px/1.3 "Inter",sans-serif}
+.bl-box p{font-size:16px;line-height:1.6;margin:0 0 14px;color:#3A3F43}
+.bl-actions{display:flex;flex-wrap:wrap;gap:12px}
+.bl-btn{display:inline-flex;align-items:center;padding:13px 20px;border-radius:8px;font:600 15px/1 "Inter",sans-serif;text-decoration:none}
+.bl-btn.primary{background-image:var(--am-grad-btn,linear-gradient(135deg,#8F622B,#5E4120));color:#FCF8F2!important;animation:am-pulse 2.8s ease-out infinite}
+.bl-btn.ghost{border:1px solid #CFA463;color:#5E4120!important;background:#fff}
+.bl-author{display:flex;gap:16px;align-items:flex-start}
+.bl-author img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 20%;flex:none;background:#EDE6DB}
+.bl-faq details{border-bottom:1px solid #E6E0D6;padding:14px 0}
+.bl-faq summary{cursor:pointer;list-style:none;font:600 17px/1.4 "Inter",sans-serif;display:flex;justify-content:space-between;gap:14px}
+.bl-faq summary::-webkit-details-marker{display:none}
+.bl-faq summary::after{content:"+";color:var(--am-600,#9C6E32);font-size:22px;font-weight:400;line-height:1;transition:transform .2s}
+.bl-faq details[open] summary::after{transform:rotate(45deg)}
+.bl-faq details p{margin:10px 0 0;font-size:16px;color:#3A3F43}
+.bl-note{font-size:13px!important;color:#7A7F83!important;margin-top:28px!important}
+/* listagem */
+.bl-list{max-width:1080px;margin:0 auto;padding:48px 20px 64px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;font-family:"Inter","Montserrat",sans-serif}
+.bl-card{display:flex;flex-direction:column;gap:10px;padding:24px;border-radius:14px;background:#fff;border:1px solid #ECE6DC;text-decoration:none;color:#1F282E;box-shadow:0 12px 28px -22px rgba(46,34,22,.5);transition:transform .25s,box-shadow .25s,border-color .25s}
+.bl-card:hover{transform:translateY(-3px);border-color:#D9C4A2;box-shadow:0 18px 34px -22px rgba(46,34,22,.6)}
+.bl-card .bl-cat{align-self:flex-start;padding:4px 10px;border-radius:4px;background:var(--am-600,#9C6E32);color:#fff;font:600 12px/1.2 "Inter",sans-serif}
+.bl-card h2,.bl-card h3{margin:4px 0 0;font:700 20px/1.3 "Inter",sans-serif;letter-spacing:-.02em}
+.bl-card p{margin:0;font-size:15px;line-height:1.55;color:#4A4F53}
+.bl-card .bl-more{margin-top:auto;padding-top:8px;font:600 14px/1 "Inter",sans-serif;color:var(--am-700,#7A5527)}
+.bl-card small{font-size:13px;color:#7A7F83}
+/* bloco do blog na home */
+.bh-sec{background:#fff;padding:64px 20px 8px;font-family:"Inter","Montserrat",sans-serif}
+.bh-sec .bh-head{max-width:1080px;margin:0 auto;text-align:center}
+.bh-sec h2{margin:0 0 8px;font:700 36px/1.2 "Inter",sans-serif;letter-spacing:-.04em;color:#1F282E}
+.bh-sec h2 span{background:var(--am-700,#7A5527);color:#fff;padding:0 .12em}
+.bh-sec .bh-head p{margin:0;color:#4A4F53;font-size:16px}
+.bh-sec .bl-list{padding-top:28px;padding-bottom:20px}
+.bh-all{text-align:center;padding-bottom:40px;font-family:"Inter",sans-serif}
+.bh-all a{font-weight:600;color:var(--am-700,#7A5527);text-decoration:none;border-bottom:1px solid currentColor}
+@media(max-width:1024px){.bl-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:767px){.bl-hero{padding:120px 18px 40px}.bl-hero h1{font-size:30px}.bl-body{font-size:17px;padding:34px 18px 10px}.bl-lead{font-size:18px}.bl-body h2{font-size:23px}.bl-list{grid-template-columns:1fr;padding:32px 16px 48px}.bh-sec h2{font-size:28px}}
+
+/* Capas e foto */
+.bl-card{padding:0;overflow:hidden}
+.bl-card .bl-cover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .5s ease}
+.bl-card:hover .bl-cover{transform:scale(1.03)}
+.bl-card > :not(.bl-cover){margin-left:22px;margin-right:22px}
+.bl-card .bl-cat{margin-top:16px}
+.bl-card .bl-more{margin-bottom:22px}
+.bl-figure{margin:0 0 30px}
+.bl-figure img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 20px 40px -26px rgba(46,34,22,.6)}
+.bl-hero-index{padding-bottom:0}
+.bl-inner-photo{max-width:1080px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:end}
+.bl-inner-photo > div{padding-bottom:56px}
+.bl-hero-photo{display:block;width:100%;max-width:360px;height:420px;object-fit:cover;object-position:62% 88%;justify-self:end;
+ -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 18%);mask-image:linear-gradient(180deg,transparent 0%,#000 18%)}
+@media(max-width:767px){.bl-inner-photo{grid-template-columns:1fr}.bl-inner-photo > div{padding-bottom:20px}.bl-hero-photo{height:260px;max-width:100%;justify-self:center}}
+.bl-hero-index .bl-hero-photo{height:400px!important;max-width:340px!important;width:100%!important}
+@media(max-width:767px){.bl-hero-index .bl-hero-photo{height:240px!important;max-width:100%!important}}
+
+/* Página do blog (desktop): mesma foto do hero da home como fundo */
+@media(min-width:768px){
+.bl-hero-index{background:linear-gradient(90deg,rgba(46,34,22,.9) 0%,rgba(46,34,22,.72) 38%,rgba(46,34,22,.15) 62%,rgba(46,34,22,0) 75%),#3A2A19 url("img_hero.jpg") no-repeat 100% 30% / cover!important;padding:170px 20px 90px!important;min-height:560px}
+.bl-hero-index .bl-inner-photo{display:block}
+.bl-hero-index .bl-inner-photo > div{max-width:560px;padding-bottom:0}
+.bl-hero-index .bl-hero-photo{display:none!important}
+}
+
+/* Cards do blog padronizados: mesma altura de título e resumo */
+.bl-card h2,.bl-card h3{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.bl-card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:4.65em}
+.bl-card h2,.bl-card h3{-webkit-line-clamp:3;min-height:3.9em}
+
+/* Filtro por assunto */
+.bl-chips{max-width:1080px;margin:0 auto;padding:36px 20px 0;display:flex;flex-wrap:wrap;gap:8px;font-family:"Inter",sans-serif}
+.bl-chips button{border:1px solid #E1D3BD;background:#fff;color:#5E4120;border-radius:999px;padding:8px 14px;font:600 13px/1 "Inter",sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.bl-chips button:hover{border-color:#CFA463}
+.bl-chips button.on{background:var(--am-700,#7A5527);border-color:var(--am-700,#7A5527);color:#fff}
+.bl-chips + .bl-list{padding-top:24px}
+@media(max-width:767px){.bl-chips{padding:24px 16px 0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.bl-chips button{flex:none}}
+
+/* Mesma tipografia da home: títulos em Albert Sans, textos em Montserrat */
+.bl-hero,.bl-body,.bl-list,.ct-sec,.bl-chips,.bh-sec{font-family:"Montserrat",sans-serif}
+.bl-hero h1{font:600 46px/1.08 "Albert Sans",sans-serif!important;letter-spacing:-.02em!important;color:#FCF8F2}
+.bl-hero p{font-family:"Montserrat",sans-serif;font-size:18px;line-height:1.5;color:#EEDDC4}
+.bl-body h2,.bl-box h3,.bl-card h2,.bl-card h3,.ct-intro h2,.ct-card b,.bl-faq summary,.bl-list h2{font-family:"Albert Sans",sans-serif!important;letter-spacing:-.02em}
+.bl-body h2,.ct-intro h2{font-weight:600!important}
+.bl-body,.bl-card p,.ct-intro p,.ct-info dd,.ct-cta p,.bl-box p{font-family:"Montserrat",sans-serif}
+/* Bloco de identidade (nome + CRM/RQE), igual ao hero da home */
+.bl-hero .am-hero-id{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin:0 0 22px}
+.bl-hero .am-hero-id .am-hero-name{margin:0;font:400 21px/1.35 "Inter","Montserrat",sans-serif;letter-spacing:-.05em;color:#EEDDC4!important}
+.bl-hero .am-hero-id .am-hero-name span{color:#fff!important}
+.bl-hero .am-hero-id .am-hero-badge{margin:0;padding:5px 12px;border:1px solid rgba(225,195,145,.55)!important;border-radius:15px;background:rgba(46,34,22,.48)!important;color:#FCF8F2!important;font:500 12px/14px "Inter","Montserrat",sans-serif;letter-spacing:-.05em}
+@media(max-width:767px){.bl-hero h1{font-size:34px!important}.bl-hero .am-hero-id .am-hero-name{font-size:17px}.bl-hero p{font-size:16.5px}}
+
+/* Filtros, botões, etiquetas e demais textos do blog/contato na fonte da home (Montserrat) */
+.bl-chips button,.bl-btn,.bl-kicker,.bl-bc,.bl-meta,.bl-card,.bl-card span,.bl-card small,.bl-faq,.bl-author,.ct-card span:not(.ct-ico),.ct-card small,.ct-info dt,.ct-info dd{font-family:"Montserrat",sans-serif!important}
+.bl-chips button{font-weight:600;letter-spacing:-.01em}
+
+/* Botão "Ler artigo" com degradê da marca */
+.bl-card .bl-more{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding:12px 20px!important;border-radius:8px;background-image:linear-gradient(135deg,#D4A65A 0%,#BD8941 40%,#7A5527 100%);color:#FCF8F2!important;font:700 13px/1 "Montserrat",sans-serif!important;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 10px 22px -12px rgba(94,65,32,.75);transition:transform .2s,box-shadow .2s,filter .2s}
+.bl-card:hover .bl-more{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 14px 26px -12px rgba(94,65,32,.85)}
+
+/* Celular: hero do blog e do contato igual ao da home (img_hero_mobile como fundo, texto escuro sobre véu claro) */
+@media(max-width:767px){
+.bl-hero-index{background:linear-gradient(180deg,rgba(250,244,236,.94) 0%,rgba(250,244,236,.86) 38%,rgba(250,244,236,.35) 52%,rgba(250,244,236,0) 62%),#EDE2D6 url("img_hero_mobile-v2.jpg") no-repeat 50% 100% / 100% auto!important;padding:120px 18px calc(98vw + 24px)!important;min-height:0}
+.bl-hero-index .bl-hero-photo{display:none!important}
+.bl-hero-index .bl-inner-photo > div{padding-bottom:0}
+.bl-hero-index h1{color:#1F1710!important}
+.bl-hero-index p{color:#3A2E22!important}
+.bl-hero-index .bl-bc,.bl-hero-index .bl-bc a{color:#7A5527!important}
+.bl-hero-index .ct-inline{color:#7A5527!important}
+.bl-hero-index .am-hero-id .am-hero-name{color:#7A5527!important}
+.bl-hero-index .am-hero-id .am-hero-name span{color:#1F1710!important}
+.bl-hero-index .am-hero-id .am-hero-badge{background:rgba(255,255,255,.7)!important;color:#3A2A19!important;border-color:#CFA463!important}
+}
+/* "Ler artigo": cor de contraste (escuro + texto dourado) para não se misturar com as etiquetas e capas */
+.bl-card .bl-more{background-image:linear-gradient(135deg,#14100C 0%,#2E2216 55%,#4A3520 100%)!important;color:#F3D9A6!important;border:1px solid rgba(212,166,90,.55);box-shadow:0 10px 22px -12px rgba(20,16,12,.8)}
+.bl-card:hover .bl-more{background-image:linear-gradient(135deg,#D4A65A 0%,#BD8941 50%,#8F622B 100%)!important;color:#fff!important;border-color:transparent}
+/* "Ler artigo": dourado, centralizado, sem seta */
+.bl-card .bl-more{align-self:center!important;justify-content:center;min-width:180px;background-image:linear-gradient(135deg,#D4A65A 0%,#BD8941 45%,#8F622B 100%)!important;color:#fff!important;border:0!important;box-shadow:0 10px 22px -12px rgba(143,98,43,.8)!important}
+.bl-card:hover .bl-more{background-image:linear-gradient(135deg,#BD8941 0%,#8F622B 55%,#5E4120 100%)!important;color:#fff!important}
+/* Etiqueta de categoria no topo dos artigos: mesmo design do selo CRM/RQE */
+.bl-hero .bl-kicker{display:inline-block;padding:5px 12px!important;border:1px solid rgba(225,195,145,.55)!important;border-radius:15px!important;background:rgba(46,34,22,.48)!important;color:#FCF8F2!important;font:500 12px/14px "Inter","Montserrat",sans-serif!important;letter-spacing:-.05em!important;text-transform:none;margin-bottom:16px}
+
+/* Logo branca no header quando o hero é escuro (artigos do blog no celular; listagem/contato/onde atendemos no tablet) */
+@media(max-width:1024px){
+ body:has(.bl-hero:not(.bl-hero-index)) .elementor-385 img.am-logo-header,
+ body:has(.bl-hero:not(.bl-hero-index)) img.am-logo-header{content:url("logo_amaynara_branca.png")!important}
+}
+@media(min-width:768px) and (max-width:1024px){
+ body:has(.bl-hero-index) img.am-logo-header{content:url("logo_amaynara_branca.png")!important}
+}

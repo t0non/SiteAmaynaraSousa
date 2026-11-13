@@ -1,0 +1,92 @@
+/* Páginas de serviço — Dra. Amaynara Sousa (leve, sem Elementor). Usa as variáveis de paleta.css */
+*{box-sizing:border-box}
+body.sp{margin:0;background:#fff;color:#1F282E;font:400 17px/1.65 "Inter","Montserrat",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.sp a{color:inherit}
+.sp-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+/* header */
+.sp-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #EEE9E1;backdrop-filter:saturate(1.2)}
+.sp-header .sp-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
+.sp-logo img{display:block;width:190px;height:auto}
+.sp-nav{display:flex;align-items:center;gap:26px;font:500 14px/1 "Inter",sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.sp-nav a{text-decoration:none;color:#3A3F43}
+.sp-nav a:hover{color:var(--am-600)}
+.sp-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:6px;background-image:var(--am-grad-btn);background-color:var(--am-700);color:#FCF8F2!important;font:600 15px/1 "Inter",sans-serif;text-decoration:none;box-shadow:0 8px 20px -10px rgba(46,34,22,.6);transition:transform .2s,box-shadow .2s}
+.sp-btn:hover{transform:translateY(-1px);box-shadow:0 12px 24px -10px rgba(46,34,22,.65)}
+.sp-btn svg{width:18px;height:18px;fill:currentColor}
+/* breadcrumb */
+.sp-bc{font-size:13px;color:#7A7F83;padding:18px 0 0}
+.sp-bc a{text-decoration:none;color:var(--am-600)}
+.sp-bc span{margin:0 6px}
+/* hero */
+.sp-hero{padding:26px 0 56px}
+.sp-hero .sp-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.sp-kicker{display:inline-block;padding:5px 11px;border-radius:4px;background:var(--am-600);color:#fff;font:600 13px/1.2 "Inter",sans-serif;margin:0 0 16px}
+.sp h1{margin:0 0 18px;font:700 44px/1.12 "Inter",sans-serif;letter-spacing:-.04em}
+.sp h1 em{font-style:normal;background:var(--am-700);color:#fff;padding:0 .1em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.sp-lead{margin:0 0 24px;font-size:19px;line-height:1.6;color:#3A3F43}
+.sp-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin:20px 0 0;padding:0;list-style:none;font-size:14px;color:#555B60}
+.sp-meta li{display:flex;align-items:center;gap:7px}
+.sp-meta svg{width:16px;height:16px;stroke:var(--am-600);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sp-photo{position:relative}
+.sp-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:75% 25%;border-radius:12px;box-shadow:0 30px 60px -35px rgba(46,34,22,.55)}
+.sp-photo figcaption{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);border-radius:8px;padding:10px 14px;font:500 13px/1.35 "Inter",sans-serif;color:#1F282E}
+.sp-photo figcaption b{display:block;font-weight:700}
+/* content */
+.sp-section{padding:56px 0;border-top:1px solid #F0ECE5}
+.sp-section.alt{background:#F7F5F1;border-top:0}
+.sp h2{margin:0 0 18px;font:700 32px/1.2 "Inter",sans-serif;letter-spacing:-.035em}
+.sp h2 em{font-style:normal;color:var(--am-700)}
+.sp h3{margin:0 0 8px;font:600 19px/1.35 "Inter",sans-serif;letter-spacing:-.02em}
+.sp p{margin:0 0 14px}
+.sp-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.sp-card{background:#fff;border:1px solid #ECE6DC;border-radius:10px;padding:22px}
+.sp-checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px}
+.sp-checks li{position:relative;padding-left:28px}
+.sp-checks li::before{content:"";position:absolute;left:0;top:.45em;width:16px;height:16px;border-radius:50%;background:var(--am-600) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center/11px no-repeat}
+.sp-steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sp-steps li{counter-increment:s;background:#fff;border:1px solid #ECE6DC;border-radius:10px;padding:22px}
+.sp-steps li::before{content:counter(s,decimal-leading-zero);display:block;font:300 34px/1 "Inter",sans-serif;color:var(--am-500);margin-bottom:10px}
+.sp-note{border-left:3px solid var(--am-500);background:#FBF8F3;padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;color:#4A4F53}
+/* faq */
+.sp-faq details{border-bottom:1px solid #E6E0D6;padding:16px 0}
+.sp-faq summary{cursor:pointer;list-style:none;font:600 18px/1.4 "Inter",sans-serif;display:flex;justify-content:space-between;gap:16px}
+.sp-faq summary::-webkit-details-marker{display:none}
+.sp-faq summary::after{content:"+";font-weight:400;font-size:24px;line-height:1;color:var(--am-600);transition:transform .2s}
+.sp-faq details[open] summary::after{transform:rotate(45deg)}
+.sp-faq details p{margin:10px 0 0;color:#3A3F43}
+/* local */
+.sp-local{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.sp-local iframe{width:100%;height:100%;min-height:280px;border:0;border-radius:10px}
+.sp-local dl{margin:0}
+.sp-local dt{font:600 13px/1.3 "Inter",sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--am-600);margin-top:14px}
+.sp-local dd{margin:4px 0 0}
+/* outros serviços */
+.sp-others{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sp-others a{display:block;text-decoration:none;border:1px solid #ECE6DC;border-radius:10px;padding:16px 18px;font-weight:600;transition:border-color .2s,transform .2s}
+.sp-others a:hover{border-color:var(--am-400);transform:translateY(-2px)}
+.sp-others a span{display:block;font-weight:400;font-size:14px;color:#6B7075;margin-top:4px}
+/* cta */
+.sp-cta{background-image:linear-gradient(140deg,#6B4A24 0%,#3A2A19 100%);color:#fff;text-align:center;padding:60px 0}
+.sp-cta h2{color:#fff}
+.sp-cta p{color:#EDE6DB;max-width:620px;margin:0 auto 24px}
+.sp-cta .sp-btn{background-image:var(--am-grad-gold);color:#2E2216!important}
+/* footer */
+.sp-footer{background:#1F1A14;color:#CFC6B8;font-size:14px;padding:34px 0}
+.sp-footer .sp-wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.sp-footer a{color:#E1C391}
+.sp-float{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.35)}
+.sp-float svg{width:30px;height:30px;fill:#fff}
+@media(max-width:900px){
+ .sp-nav a:not(.sp-btn){display:none}
+ .sp-hero .sp-wrap,.sp-local{grid-template-columns:1fr}
+ .sp-photo img{height:320px}
+ .sp-steps,.sp-others{grid-template-columns:1fr}
+ .sp-cols,.sp-checks{grid-template-columns:1fr}
+ .sp h1{font-size:34px}.sp h2{font-size:26px}
+}
+@media(max-width:480px){.sp-logo img{width:150px}.sp-nav .sp-btn{padding:11px 14px;font-size:13px}}
+@media (prefers-reduced-motion:no-preference){.sp-hero .sp-wrap>*{animation:am-rise .8s cubic-bezier(.2,.7,.2,1) both}.sp-hero .sp-photo{animation-delay:.15s}}
+
+/* conteúdo de serviço embutido no layout da home */
+.sp-embed{font:400 17px/1.65 "Inter","Montserrat",system-ui,sans-serif;color:#1F282E;background:#fff}
+.sp-embed .sp-section:first-child{border-top:0}

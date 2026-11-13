@@ -1,0 +1,15 @@
+dist/
+dist-public/
+node_modules/
+
+# referências e cópias de terceiros, backups e arquivos locais (não publicar)
+_backup*/
+camila-clone/
+inayaporto-clone/
+denise-ref/
+.claude/
+*.csv
+*.log
+.env*
+Thumbs.db
+.DS_Store
