@@ -55,3 +55,6 @@
 .fq-sec{background:#fff!important}
 .fq-list details{background:#FBF9F6}
 .fq-list details[open]{background:#fff;box-shadow:0 12px 26px -20px rgba(46,34,22,.45)}
+
+/* parágrafo de palavras-chave da home */
+.am-kw{margin-top:14px!important}
