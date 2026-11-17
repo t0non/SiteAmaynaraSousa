@@ -20,3 +20,8 @@ User-agent: ClaudeBot
 Allow: /
 
 # Ao publicar: Sitemap: https://DOMINIO-FINAL/sitemap.xml
+
+# Painel e funções internas (não indexar)
+User-agent: *
+Disallow: /admin/
+Disallow: /api/

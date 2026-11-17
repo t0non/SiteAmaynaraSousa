@@ -238,3 +238,25 @@ body .elementor-element-e3c834f .elementor-heading-title span{background:var(--a
 /* "Conheça a Dra." com grifo dourado (o fundo da seção já é marrom) */
 body .elementor-element-275740f .elementor-heading-title span{background:#D4A65A;color:#2E2216;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 body .elementor-element-275740f .elementor-heading-title span{color:#fff!important;background:#BD8941!important}
+
+/* headline do topo: Plus Jakarta Sans (fina em cima, forte embaixo) */
+html body .elementor-385 .elementor-element-fd848fb .am-hl:not(#am-x),
+html body .elementor-385 .elementor-element-fd848fb .am-hl:not(#am-x) strong{font-family:"Plus Jakarta Sans","Inter",sans-serif!important;letter-spacing:-.035em!important}
+html body .elementor-385 .elementor-element-fd848fb .am-hl:not(#am-x){font-weight:300!important;line-height:1.08!important}
+html body .elementor-385 .elementor-element-fd848fb .am-hl:not(#am-x) strong{font-weight:800!important}
+html body .elementor-385 .elementor-element-fd848fb .am-hl:not(#am-x),html body .elementor-385 .elementor-element-fd848fb .am-hl:not(#am-x) strong{letter-spacing:-.015em!important;word-spacing:.04em}
+
+/* ===== HEADLINES DO SITE: Plus Jakarta Sans (pesos de cada seção mantidos) =====
+   Fica de fora: a linha de identidade do topo (Inter), a faixa dourada e o rodapé. */
+html body :is(h1,h2,h3,h4):not(#am-x):not(.am-hero-name):not(.elementor-element-f8e180a *):not(.elementor-element-8177d76 *),
+html body :is(h1,h2,h3,h4):not(#am-x):not(.am-hero-name) span:not(#am-x),
+html body :is(.sv-pain .sv-body h3, .dv-card b, .ct-card b):not(#am-x){
+ font-family:"Plus Jakarta Sans","Inter",sans-serif!important;letter-spacing:-.02em!important}
+html body .am-hero-id .am-hero-name:not(#am-x), html body .am-hero-id .am-hero-name:not(#am-x) span{font-family:"Inter","Montserrat",sans-serif!important}
+
+/* headlines de dor nas páginas de serviço: quebram em linhas equilibradas (frases mais longas que a da home) */
+html body .elementor-385 .elementor-element-fd848fb .elementor-element-bc1d7dc:has(.am-hl-svc){width:auto!important;max-width:640px!important}
+html body .elementor-385 .elementor-element-fd848fb .am-hl-svc:not(#am-x),
+html body .elementor-385 .elementor-element-fd848fb .am-hl-svc:not(#am-x) strong{white-space:normal!important;text-wrap:balance!important}
+@media(min-width:1025px){html body .elementor-385 .elementor-element-fd848fb .am-hl-svc:not(#am-x){font-size:clamp(32px,2.9vw,42px)!important}}
+@media(min-width:1025px){html body .elementor-385 .elementor-element-fd848fb .elementor-element-bc1d7dc:has(.am-hl-svc){width:min(620px,46vw)!important;max-width:none!important}}

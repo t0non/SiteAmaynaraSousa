@@ -2,11 +2,8 @@
 /dist-public/
 node_modules/
 
-# referências e cópias de terceiros, backups e arquivos locais (não publicar)
-_backup*/
-camila-clone/
-inayaporto-clone/
-denise-ref/
+# arquivos locais (não publicar)
+materiais-originais/
 .claude/
 *.csv
 *.log

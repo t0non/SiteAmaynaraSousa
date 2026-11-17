@@ -29,3 +29,28 @@
 
 /* contato: botão e links do fim da seção centralizados */
 .ct-cta{justify-content:center!important;text-align:center}
+
+/* contato simplificado: tudo centralizado, 3 cards limpos e o horário numa linha */
+.ct-simple{padding:64px 20px 40px}
+.ct-simple .ct-intro{text-align:center;margin:0 auto 30px;max-width:640px}
+.ct-simple .ct-intro h2 span{background:var(--am-700,#7A5527);color:#fff;padding:0 .12em}
+.ct-simple .ct-intro p{margin:10px auto 0;max-width:560px}
+.ct-simple .ct-card{align-items:center;text-align:center;padding:30px 22px 26px;gap:6px;background:#fff}
+.ct-simple .ct-ico{width:56px;height:56px;border-radius:16px;margin-bottom:6px}
+.ct-simple .ct-ico svg,.ct-simple .ct-ico img{width:26px!important;height:26px!important}
+.ct-simple .ct-card b{margin-top:4px;font-size:19px}
+.ct-simple .ct-card small{margin-top:6px;font-weight:600;font-size:13.5px;color:var(--am-600,#9C6E32)}
+.ct-simple .ct-wa{border-color:#BFE6CC;background:#F4FBF6}
+.ct-hours{margin:26px 0 0;text-align:center;color:#4A4F53;font-size:15.5px}
+.ct-hours b{color:#2E2216;font-weight:600}
+@media(max-width:767px){.ct-simple{padding:44px 16px 28px}.ct-simple .ct-grid{gap:12px}.ct-simple .ct-card{display:grid!important;grid-template-columns:52px 1fr;column-gap:14px;row-gap:2px;align-items:center;text-align:left;padding:16px 18px}.ct-simple .ct-ico{grid-row:1/4;width:52px;height:52px;margin:0}.ct-simple .ct-card b{margin:0;font-size:17px}.ct-simple .ct-card small{margin:0}}
+
+/* contato: WhatsApp no marrom da marca e um botão em cada card */
+.ct-simple .ct-wa{border-color:#ECE6DC!important;background:#fff!important}
+.ct-simple .ct-wa .ct-ico{background:var(--am-700,#7A5527)!important}
+.ct-simple .ct-card small{display:inline-flex;align-items:center;justify-content:center;margin-top:14px!important;padding:12px 26px;border-radius:8px;
+ background-image:linear-gradient(135deg,#D4A65A 0%,#BD8941 45%,#8F622B 100%);color:#fff!important;
+ font:700 13px/1.2 "Albert Sans","Montserrat",sans-serif!important;letter-spacing:.03em!important;text-transform:uppercase;box-shadow:0 10px 20px -12px rgba(143,98,43,.9);transition:filter .2s}
+.ct-simple .ct-card:hover small{filter:brightness(.92)}
+@media(max-width:767px){.ct-simple .ct-card small{grid-column:2;justify-self:start;margin-top:8px!important;padding:9px 16px;font-size:12px!important}}
+html body .ct-simple .ct-card small:not(#am-x){font-family:"Albert Sans","Montserrat",sans-serif!important;font-weight:700!important;letter-spacing:.03em!important}
