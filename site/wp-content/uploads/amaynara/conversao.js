@@ -27,3 +27,15 @@
     a.addEventListener('click', function () { window.dataLayer.push({ event: 'directions_click', consultorio: a.closest('.cn-card').querySelector('h3').textContent }); });
   });
 })();
+
+/* WhatsApp flutuante: escondido enquanto o topo (hero) estiver na tela */
+(function () {
+  var hero = document.querySelector('.elementor-element-fd848fb, .bl-hero');
+  if (!hero) return;
+  var ticking = false;
+  function upd() { ticking = false; document.body.classList.toggle('am-wa-hide', hero.getBoundingClientRect().bottom > window.innerHeight * 0.15); }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }
+  upd();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+})();

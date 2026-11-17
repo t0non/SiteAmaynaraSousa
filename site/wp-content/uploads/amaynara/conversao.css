@@ -66,3 +66,12 @@
  .elementor-element-fd848fb .am-rating-card{position:absolute!important;left:20px;right:20px;bottom:-112px;margin:0!important;width:auto!important;max-width:none;justify-content:flex-start;z-index:3;
   background:#fff!important;box-shadow:0 14px 30px -16px rgba(46,34,22,.45)!important}
 }
+
+/* celular: botão do topo centralizado */
+@media(max-width:767px){
+ .elementor-element-fd848fb .elementor-element-6654193{align-self:stretch!important;width:100%!important}
+ .elementor-element-fd848fb .elementor-element-6654193 .elementor-button-wrapper{display:flex!important;justify-content:center!important}
+}
+/* WhatsApp flutuante só aparece depois do topo da página */
+.elementor-element-f726a6a{transition:opacity .35s ease,transform .35s ease}
+body.am-wa-hide .elementor-element-f726a6a{opacity:0!important;transform:translateY(16px) scale(.7)!important;pointer-events:none!important}
