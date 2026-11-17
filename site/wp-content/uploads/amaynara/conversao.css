@@ -58,3 +58,11 @@
 
 /* parágrafo de palavras-chave da home */
 .am-kw{margin-top:14px!important}
+
+/* celular: card do Google sai de cima da foto e fica logo abaixo dela */
+@media(max-width:767px){
+ .elementor-element-fd848fb{margin-bottom:128px!important}
+ .elementor-element-fd848fb .elementor-element-5541311{position:static!important}
+ .elementor-element-fd848fb .am-rating-card{position:absolute!important;left:20px;right:20px;bottom:-112px;margin:0!important;width:auto!important;max-width:none;justify-content:flex-start;z-index:3;
+  background:#fff!important;box-shadow:0 14px 30px -16px rgba(46,34,22,.45)!important}
+}
