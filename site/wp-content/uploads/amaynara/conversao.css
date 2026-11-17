@@ -234,3 +234,7 @@ html body .sv-wa span:not(#am-x){font-family:"Albert Sans","Montserrat",sans-ser
 
 /* título dos depoimentos com grifo (igual aos outros títulos) */
 body .elementor-element-e3c834f .elementor-heading-title span{background:var(--am-700,#7A5527);color:#fff;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+/* "Conheça a Dra." com grifo dourado (o fundo da seção já é marrom) */
+body .elementor-element-275740f .elementor-heading-title span{background:#D4A65A;color:#2E2216;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+body .elementor-element-275740f .elementor-heading-title span{color:#fff!important;background:#BD8941!important}

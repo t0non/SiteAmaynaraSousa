@@ -90,3 +90,10 @@ body.sp{margin:0;background:#fff;color:#1F282E;font:400 17px/1.65 "Inter","Monts
 /* conteúdo de serviço embutido no layout da home */
 .sp-embed{font:400 17px/1.65 "Inter","Montserrat",system-ui,sans-serif;color:#1F282E;background:#fff}
 .sp-embed .sp-section:first-child{border-top:0}
+
+/* bloco narrativo "O que faz uma médica de família?" */
+.sp-story h3{margin:26px 0 10px;font:600 22px/1.3 "Inter",sans-serif;letter-spacing:-.03em;color:#2E2216}
+.sp-story .sp-dash{padding-left:14px;border-left:3px solid var(--am-500,#BD8941);color:#4A3F35}
+.sp-start{margin-top:24px;padding-top:20px;border-top:1px solid rgba(189,137,65,.3)}
+.sp-start h3{margin:0 0 8px;font:600 20px/1.3 "Inter",sans-serif;letter-spacing:-.03em;color:#2E2216}
+.sp-start p{margin:0 0 8px}

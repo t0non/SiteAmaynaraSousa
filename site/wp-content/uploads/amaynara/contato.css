@@ -23,3 +23,9 @@
 .ct-cta p{margin:0;color:#4A4F53;font-size:15px}
 .ct-cta p a{color:var(--am-700,#7A5527);font-weight:600}
 @media(max-width:767px){.ct-grid,.ct-info{grid-template-columns:1fr}.ct-sec{padding:40px 16px 16px}.ct-intro h2{font-size:25px}}
+
+/* contato: ícone do WhatsApp um pouco maior dentro do quadrado verde */
+.ct-wa .ct-ico svg{width:24px;height:24px}
+
+/* contato: botão e links do fim da seção centralizados */
+.ct-cta{justify-content:center!important;text-align:center}

@@ -96,3 +96,9 @@
 /* ícones dos cards de sinais maiores */
 body .sv-pain .sv-top img.sv-ico,body .sv-pain .sv-top svg{width:62px!important;height:62px!important}
 @media(max-width:767px){body .sv-pain .sv-top img.sv-ico,body .sv-pain .sv-top svg{width:56px!important;height:56px!important}}
+
+/* "Outros serviços" nas páginas de serviço: 5 cards, última linha centralizada */
+.sv-outros .sv-grid{display:flex!important;flex-wrap:wrap;justify-content:center;gap:20px}
+.sv-outros .sv-card{flex:0 1 calc((100% - 40px)/3)}
+@media(max-width:1024px){.sv-outros .sv-card{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:767px){.sv-outros .sv-card{flex-basis:100%}}
