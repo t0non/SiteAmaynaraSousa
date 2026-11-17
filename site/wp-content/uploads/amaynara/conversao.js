@@ -16,7 +16,8 @@
   window.dataLayer = window.dataLayer || [];
   document.querySelectorAll('a[href*="wa.me/"]').forEach(function (a) {
     var o = origem(a);
-    var msg = 'Olá! Vim pelo site (' + pagina + ' – ' + o + ') e gostaria de agendar uma consulta com a Dra. Amaynara.';
+    var q = a.getAttribute('data-queixa'); if (q) o = o + ' – ' + q;
+    var msg = 'Olá! Vim pelo site (' + pagina + ' – ' + o + ') ' + (a.getAttribute('data-wa-msg') || 'e gostaria de agendar uma consulta com a Dra. Amaynara.');
     a.href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(msg);
     a.addEventListener('click', function () { window.dataLayer.push({ event: 'whatsapp_click', origem: o, pagina: pagina }); });
   });

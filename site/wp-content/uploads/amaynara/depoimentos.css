@@ -54,3 +54,16 @@
 .dp-prev{left:-24px}.dp-next{right:-24px}
 @media(max-width:1024px){.dp-prev{left:-8px}.dp-next{right:-8px}}
 @media(max-width:767px){.dp-nav{display:none!important}}
+
+/* setas fora dos cards (não cobrem o texto):
+   telas largas → nas laterais, do lado de fora; telas médias → abaixo do carrossel, centralizadas */
+@media(min-width:768px){
+ .dp-carousel{padding-bottom:66px}
+ .dp-nav{top:auto!important;bottom:0}
+ .dp-prev{left:calc(50% - 58px)!important}.dp-next{right:calc(50% - 58px)!important}
+}
+@media(min-width:1320px){
+ .dp-carousel{padding-bottom:0}
+ .dp-nav{top:calc(50% - 33px)!important;bottom:auto}
+ .dp-prev{left:-78px!important}.dp-next{right:-78px!important}
+}
